@@ -1,0 +1,42 @@
+{
+    "PROCESSO_CIVEL_E_DO_TRABALHO": {
+        "codigo": 1001,
+        "descricao": "Processo Cível e do Trabalho"
+    },
+    "PROCESSO_CRIMINAL": {
+        "codigo": 1002,
+        "descricao": "Processo Criminal"
+    },
+    "DIREITO_ADMINISTRATIVO": {
+        "codigo": 1003,
+        "descricao": "Direito Administrativo e Outras Matérias de Direito Público"
+    },
+    "DIREITO_TRIBUTARIO": {
+        "codigo": 1004,
+        "descricao": "Direito Tributário"
+    },
+    "DIREITO_PREVIDENCIARIO": {
+        "codigo": 1005,
+        "descricao": "Direito Previdenciário"
+    },
+    "DIREITO_PENAL": {
+        "codigo": 1006,
+        "descricao": "Direito Penal"
+    },
+    "DIREITO_DO_TRABALHO": {
+        "codigo": 1007,
+        "descricao": "Direito do Trabalho"
+    },
+    "DIREITO_CIVIL": {
+        "codigo": 1008,
+        "descricao": "Direito Civil"
+    },
+    "DIREITO_PROCESSUAL_CIVIL_E_DO_TRABALHO": {
+        "codigo": 1009,
+        "descricao": "Direito Processual Civil e do Trabalho"
+    },
+    "DIREITO_PROCESSUAL_PENAL": {
+        "codigo": 1010,
+        "descricao": "Direito Processual Penal"
+    }
+}

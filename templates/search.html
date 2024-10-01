@@ -1,0 +1,115 @@
+<!-- templates/search.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="mt-4">Pesquisa de Processos</h1>
+    
+    {% if error %}
+        <div class="alert alert-danger" role="alert">
+            {{ error }}
+        </div>
+    {% endif %}
+    
+    <form method="post">
+        <!-- Campo Tribunal -->
+        <div class="form-group">
+            <label for="tribunal">Tribunal</label>
+            <select class="form-control" id="tribunal" name="tribunal" required>
+                <option value="">Selecione um Tribunal</option>
+                {% for tribunal in tribunais %}
+                    <option value="{{ tribunal }}">{{ tribunal }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <!-- Campo Número do Processo -->
+        <div class="form-group">
+            <label for="numero_processo">Número do Processo</label>
+            <input type="text" class="form-control" id="numero_processo" name="numero_processo" placeholder="Ex: 00008323520184013202">
+        </div>
+        
+        <!-- Campo Data de Ajuizamento -->
+        <div class="form-group">
+            <label for="data_ajuizamento">Data de Ajuizamento</label>
+            <input type="date" class="form-control" id="data_ajuizamento" name="data_ajuizamento">
+        </div>
+        
+        <!-- Campo Grau -->
+        <div class="form-group">
+            <label for="grau">Grau</label>
+            <select class="form-control" id="grau" name="grau">
+                <option value="">Selecione o Grau</option>
+                <option value="G1">G1</option>
+                <option value="G2">G2</option>
+                <option value="JE">JE</option>
+                <!-- Adicione outros graus conforme necessário -->
+            </select>
+        </div>
+        
+        <!-- Campo Classe Processual -->
+        <div class="form-group">
+            <label for="classe_codigo">Classe Processual</label>
+            <select class="form-control" id="classe_codigo" name="classe_codigo">
+                <option value="">Selecione uma Classe Processual</option>
+                {% for chave, classe in classes_processuais.items() %}
+                    <option value="{{ classe.codigo }}">{{ classe.descricao }} ({{ classe.codigo }})</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <!-- Campo Assunto Processual -->
+        <div class="form-group">
+            <label for="assunto_codigo">Assunto Processual</label>
+            <select class="form-control" id="assunto_codigo" name="assunto_codigo">
+                <option value="">Selecione um Assunto Processual</option>
+                <!-- As opções serão carregadas via JavaScript -->
+            </select>
+        </div>
+        
+        <!-- Campo Órgão Julgador -->
+        <div class="form-group">
+            <label for="orgao_julgador_codigo">Órgão Julgador (Código)</label>
+            <input type="number" class="form-control" id="orgao_julgador_codigo" name="orgao_julgador_codigo" placeholder="Ex: 13597">
+        </div>
+        
+        <!-- Botão de Pesquisa -->
+        <button type="submit" class="btn btn-primary">Pesquisar</button>
+    </form>
+
+    <!-- Script para Atualizar Assuntos Processuais com Base na Classe Selecionada -->
+    <script>
+        const assuntosProcessuais = {{ assuntos_processuais | tojson }};
+        const classeSelect = document.getElementById('classe_codigo');
+        const assuntoSelect = document.getElementById('assunto_codigo');
+
+        classeSelect.addEventListener('change', function() {
+            const selectedClasseCodigo = parseInt(this.value);
+            // Limpar o select de assuntos
+            assuntoSelect.innerHTML = '<option value="">Selecione um Assunto Processual</option>';
+
+            if (selectedClasseCodigo && assuntosProcessuais) {
+                // Encontrar o assunto correspondente à classe selecionada
+                const classe = Object.values(assuntosProcessuais).find(a => a.codigo === selectedClasseCodigo);
+                if (classe && classe.subassuntos) {
+                    // Se houver subassuntos, adicioná-los ao select
+                    for (const [key, subassunto] of Object.entries(classe.subassuntos)) {
+                        const option = document.createElement('option');
+                        option.value = subassunto.codigo;
+                        option.text = `${subassunto.descricao} (${subassunto.codigo})`;
+                        assuntoSelect.appendChild(option);
+                    }
+                } else {
+                    // Se não houver subassuntos, adicionar o próprio assunto
+                    const assunto = assuntosProcessuais[Object.keys(assuntosProcessuais).find(key => assuntosProcessuais[key].codigo === selectedClasseCodigo)];
+                    if (assunto) {
+                        const option = document.createElement('option');
+                        option.value = assunto.codigo;
+                        option.text = `${assunto.descricao} (${assunto.codigo})`;
+                        assuntoSelect.appendChild(option);
+                    }
+                }
+            }
+        });
+    </script>
+{% endblock %}

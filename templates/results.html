@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="mt-4">Resultados da Pesquisa</h1>
+    {% if processos %}
+        <p>Total de Processos Encontrados: {{ processos|length }}</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Número do Processo</th>
+                    <th>Tribunal</th>
+                    <th>Classe</th>
+                    <th>Grau</th>
+                    <th>Data de Ajuizamento</th>
+                    <th>Órgão Julgador</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for processo in processos %}
+                    <tr>
+                        <td>{{ processo.numeroProcesso }}</td>
+                        <td>{{ processo.tribunal }}</td>
+                        <td>{{ processo.classe.nome }} ({{ processo.classe.codigo }})</td>
+                        <td>{{ processo.grau }}</td>
+                        <td>{{ processo.dataAjuizamento[:10] }}</td>
+                        <td>{{ processo.orgaoJulgador.nome }} ({{ processo.orgaoJulgador.codigo }})</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% if processos|length >= 100 * 5 %}
+            <p>Foram encontrados mais processos que não foram exibidos.</p>
+        {% endif %}
+    {% else %}
+        <p>Nenhum processo encontrado com os critérios de pesquisa fornecidos.</p>
+    {% endif %}
+    <a href="/" class="btn btn-secondary">Nova Pesquisa</a>
+{% endblock %}

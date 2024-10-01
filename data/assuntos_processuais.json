@@ -1,0 +1,530 @@
+{
+    "DIREITO_ADMINISTRATIVO_E_OUTRAS_MATERIAS_DE_DIREITO_PUBLICO": {
+        "codigo": 2001,
+        "descricao": "Direito Administrativo e Outras Matérias de Direito Público",
+        "subassuntos": {
+            "1": {
+                "codigo": 200101,
+                "descricao": "Servidores Públicos"
+            },
+            "2": {
+                "codigo": 200102,
+                "descricao": "Licitações"
+            },
+            "3": {
+                "codigo": 200103,
+                "descricao": "Contratos Administrativos"
+            },
+            "4": {
+                "codigo": 200104,
+                "descricao": "Ações Populares"
+            },
+            "5": {
+                "codigo": 200105,
+                "descricao": "Bens Públicos"
+            },
+            "6": {
+                "codigo": 200106,
+                "descricao": "Política Regulamentar"
+            }
+        }
+    },
+    "DIREITO_CIVIL": {
+        "codigo": 2002,
+        "descricao": "Direito Civil",
+        "subassuntos": {
+            "1": {
+                "codigo": 200201,
+                "descricao": "Contratos"
+            },
+            "2": {
+                "codigo": 200202,
+                "descricao": "Responsabilidade Civil"
+            },
+            "3": {
+                "codigo": 200203,
+                "descricao": "Família e Sucessões"
+            },
+            "4": {
+                "codigo": 200204,
+                "descricao": "Propriedade e Posse"
+            },
+            "5": {
+                "codigo": 200205,
+                "descricao": "Direitos Reais"
+            },
+            "6": {
+                "codigo": 200206,
+                "descricao": "Obrigações"
+            }
+        }
+    },
+    "DIREITO_CRIMINAL": {
+        "codigo": 2003,
+        "descricao": "Direito Criminal",
+        "subassuntos": {
+            "1": {
+                "codigo": 200301,
+                "descricao": "Crimes Contra a Pessoa"
+            },
+            "2": {
+                "codigo": 200302,
+                "descricao": "Crimes Contra o Patrimônio"
+            },
+            "3": {
+                "codigo": 200303,
+                "descricao": "Crimes Contra a Administração Pública"
+            },
+            "4": {
+                "codigo": 200304,
+                "descricao": "Crimes de Trânsito"
+            },
+            "5": {
+                "codigo": 200305,
+                "descricao": "Crimes Ambientais"
+            },
+            "6": {
+                "codigo": 200306,
+                "descricao": "Crimes Eleitorais"
+            },
+            "7": {
+                "codigo": 200307,
+                "descricao": "Crimes Contra a Organização do Trabalho"
+            }
+        }
+    },
+    "DIREITO_TRABALHO": {
+        "codigo": 2005,
+        "descricao": "Direito do Trabalho",
+        "subassuntos": {
+            "1": {
+                "codigo": 200501,
+                "descricao": "Ações Trabalhistas"
+            },
+            "2": {
+                "codigo": 200502,
+                "descricao": "Relações Sindicais"
+            },
+            "3": {
+                "codigo": 200503,
+                "descricao": "Acidente de Trabalho"
+            },
+            "4": {
+                "codigo": 200504,
+                "descricao": "Direitos Trabalhistas"
+            },
+            "5": {
+                "codigo": 200505,
+                "descricao": "Terceirização"
+            },
+            "6": {
+                "codigo": 200506,
+                "descricao": "Normas de Segurança e Saúde no Trabalho"
+            }
+        }
+    },
+    "DIREITO_TRIBUTARIO": {
+        "codigo": 2004,
+        "descricao": "Direito Tributário",
+        "subassuntos": {
+            "1": {
+                "codigo": 200401,
+                "descricao": "Impostos Federais"
+            },
+            "2": {
+                "codigo": 200402,
+                "descricao": "Impostos Estaduais"
+            },
+            "3": {
+                "codigo": 200403,
+                "descricao": "Impostos Municipais"
+            },
+            "4": {
+                "codigo": 200404,
+                "descricao": "Taxas e Contribuições"
+            },
+            "5": {
+                "codigo": 200405,
+                "descricao": "Crédito Tributário"
+            },
+            "6": {
+                "codigo": 200406,
+                "descricao": "Obrigações Acessórias"
+            },
+            "7": {
+                "codigo": 200407,
+                "descricao": "Planejamento Tributário"
+            }
+        }
+    },
+    "DIREITO_PREVIDENCIARIO": {
+        "codigo": 2006,
+        "descricao": "Direito Previdenciário",
+        "subassuntos": {
+            "1": {
+                "codigo": 200601,
+                "descricao": "Benefícios Previdenciários"
+            },
+            "2": {
+                "codigo": 200602,
+                "descricao": "Contribuições Previdenciárias"
+            },
+            "3": {
+                "codigo": 200603,
+                "descricao": "Regimes Próprios de Previdência"
+            },
+            "4": {
+                "codigo": 200604,
+                "descricao": "Aposentadorias"
+            },
+            "5": {
+                "codigo": 200605,
+                "descricao": "Auxílios e Pensões"
+            }
+        }
+    },
+    "DIREITO_PROCESSUAL_CIVIL_E_DO_TRABALHO": {
+        "codigo": 2007,
+        "descricao": "Direito Processual Civil e do Trabalho",
+        "subassuntos": {
+            "1": {
+                "codigo": 200701,
+                "descricao": "Procedimento Ordinário"
+            },
+            "2": {
+                "codigo": 200702,
+                "descricao": "Procedimento Sumaríssimo"
+            },
+            "3": {
+                "codigo": 200703,
+                "descricao": "Recursos"
+            },
+            "4": {
+                "codigo": 200704,
+                "descricao": "Execução"
+            },
+            "5": {
+                "codigo": 200705,
+                "descricao": "Cumprimento de Sentença"
+            },
+            "6": {
+                "codigo": 200706,
+                "descricao": "Incidentes Processuais"
+            },
+            "7": {
+                "codigo": 200707,
+                "descricao": "Medidas Cautelares"
+            }
+        }
+    },
+    "DIREITO_PROCESSUAL_PENAL": {
+        "codigo": 2008,
+        "descricao": "Direito Processual Penal",
+        "subassuntos": {
+            "1": {
+                "codigo": 200801,
+                "descricao": "Procedimento Investigatório"
+            },
+            "2": {
+                "codigo": 200802,
+                "descricao": "Ação Penal"
+            },
+            "3": {
+                "codigo": 200803,
+                "descricao": "Recursos Processuais"
+            },
+            "4": {
+                "codigo": 200804,
+                "descricao": "Execução Penal"
+            },
+            "5": {
+                "codigo": 200805,
+                "descricao": "Medidas Cautelares"
+            }
+        }
+    },
+    "DIREITO_DA_CRIANCA_E_DO_ADOLESCENTE": {
+        "codigo": 2009,
+        "descricao": "Direito da Criança e do Adolescente",
+        "subassuntos": {
+            "1": {
+                "codigo": 200901,
+                "descricao": "Proteção Integral"
+            },
+            "2": {
+                "codigo": 200902,
+                "descricao": "Medidas Socioeducativas"
+            },
+            "3": {
+                "codigo": 200903,
+                "descricao": "Adoção"
+            },
+            "4": {
+                "codigo": 200904,
+                "descricao": "Abandono Material"
+            },
+            "5": {
+                "codigo": 200905,
+                "descricao": "Direitos Fundamentais da Criança e do Adolescente"
+            }
+        }
+    },
+    "DIREITO_DO_IDOSO": {
+        "codigo": 2010,
+        "descricao": "Direito do Idoso",
+        "subassuntos": {
+            "1": {
+                "codigo": 201001,
+                "descricao": "Proteção ao Idoso"
+            },
+            "2": {
+                "codigo": 201002,
+                "descricao": "Benefícios e Assistência"
+            },
+            "3": {
+                "codigo": 201003,
+                "descricao": "Violência contra o Idoso"
+            },
+            "4": {
+                "codigo": 201004,
+                "descricao": "Direitos Fundamentais do Idoso"
+            }
+        }
+    },
+    "DIREITO_DE_CONSUMIDOR": {
+        "codigo": 2011,
+        "descricao": "Direito do Consumidor",
+        "subassuntos": {
+            "1": {
+                "codigo": 201101,
+                "descricao": "Relações de Consumo"
+            },
+            "2": {
+                "codigo": 201102,
+                "descricao": "Defesa do Consumidor"
+            },
+            "3": {
+                "codigo": 201103,
+                "descricao": "Práticas Abusivas"
+            },
+            "4": {
+                "codigo": 201104,
+                "descricao": "Publicidade Enganosa"
+            },
+            "5": {
+                "codigo": 201105,
+                "descricao": "Garantias e Assistência Técnica"
+            }
+        }
+    },
+    "DIREITO_ELEITORAL": {
+        "codigo": 2012,
+        "descricao": "Direito Eleitoral",
+        "subassuntos": {
+            "1": {
+                "codigo": 201201,
+                "descricao": "Processo Eleitoral"
+            },
+            "2": {
+                "codigo": 201202,
+                "descricao": "Partidos Políticos"
+            },
+            "3": {
+                "codigo": 201203,
+                "descricao": "Financiamento de Campanha"
+            },
+            "4": {
+                "codigo": 201204,
+                "descricao": "Direitos e Deveres dos Eleitores"
+            },
+            "5": {
+                "codigo": 201205,
+                "descricao": "Propaganda Eleitoral"
+            }
+        }
+    },
+    "DIREITO_INTERNACIONAL": {
+        "codigo": 2013,
+        "descricao": "Direito Internacional",
+        "subassuntos": {
+            "1": {
+                "codigo": 201301,
+                "descricao": "Direito Internacional Público"
+            },
+            "2": {
+                "codigo": 201302,
+                "descricao": "Direito Internacional Privado"
+            },
+            "3": {
+                "codigo": 201303,
+                "descricao": "Tratados Internacionais"
+            },
+            "4": {
+                "codigo": 201304,
+                "descricao": "Direitos Humanos"
+            }
+        }
+    },
+    "DIREITO_MARITIMO": {
+        "codigo": 2014,
+        "descricao": "Direito Marítimo",
+        "subassuntos": {
+            "1": {
+                "codigo": 201401,
+                "descricao": "Navegação"
+            },
+            "2": {
+                "codigo": 201402,
+                "descricao": "Seguros Marítimos"
+            },
+            "3": {
+                "codigo": 201403,
+                "descricao": "Contratos Marítimos"
+            },
+            "4": {
+                "codigo": 201404,
+                "descricao": "Responsabilidade Marítima"
+            }
+        }
+    },
+    "REGISTROS_PUBLICOS": {
+        "codigo": 2015,
+        "descricao": "Registros Públicos",
+        "subassuntos": {
+            "1": {
+                "codigo": 201501,
+                "descricao": "Registro Civil"
+            },
+            "2": {
+                "codigo": 201502,
+                "descricao": "Registro de Imóveis"
+            },
+            "3": {
+                "codigo": 201503,
+                "descricao": "Registro de Títulos e Documentos"
+            },
+            "4": {
+                "codigo": 201504,
+                "descricao": "Registro Mercantil"
+            },
+            "5": {
+                "codigo": 201505,
+                "descricao": "Registro de Pessoas Jurídicas"
+            }
+        }
+    },
+    "DIREITO_PROCESSUAL_ELEITORAL": {
+        "codigo": 2016,
+        "descricao": "Direito Processual Eleitoral",
+        "subassuntos": {
+            "1": {
+                "codigo": 201601,
+                "descricao": "Ações de Impugnação de Mandatos"
+            },
+            "2": {
+                "codigo": 201602,
+                "descricao": "Mandatos de Representantes"
+            },
+            "3": {
+                "codigo": 201603,
+                "descricao": "Recursos Eleitorais"
+            },
+            "4": {
+                "codigo": 201604,
+                "descricao": "Processo Eleitoral Digital"
+            }
+        }
+    },
+    "DIREITO_AMBIENTAL": {
+        "codigo": 2017,
+        "descricao": "Direito Ambiental",
+        "subassuntos": {
+            "1": {
+                "codigo": 201701,
+                "descricao": "Poluição e Controle Ambiental"
+            },
+            "2": {
+                "codigo": 201702,
+                "descricao": "Licenciamento Ambiental"
+            },
+            "3": {
+                "codigo": 201703,
+                "descricao": "Proteção da Fauna e Flora"
+            },
+            "4": {
+                "codigo": 201704,
+                "descricao": "Conservação de Recursos Naturais"
+            }
+        }
+    },
+    "DIREITO_MILITAR": {
+        "codigo": 2018,
+        "descricao": "Direito Militar",
+        "subassuntos": {
+            "1": {
+                "codigo": 201801,
+                "descricao": "Regime Jurídico dos Militares"
+            },
+            "2": {
+                "codigo": 201802,
+                "descricao": "Crimes Militares"
+            },
+            "3": {
+                "codigo": 201803,
+                "descricao": "Processo Militar"
+            },
+            "4": {
+                "codigo": 201804,
+                "descricao": "Direitos dos Militares"
+            }
+        }
+    },
+    "DIREITO_FAMILIAR": {
+        "codigo": 2019,
+        "descricao": "Direito Familiar",
+        "subassuntos": {
+            "1": {
+                "codigo": 201901,
+                "descricao": "Divórcio"
+            },
+            "2": {
+                "codigo": 201902,
+                "descricao": "Guarda e Tutela"
+            },
+            "3": {
+                "codigo": 201903,
+                "descricao": "Alimentos"
+            },
+            "4": {
+                "codigo": 201904,
+                "descricao": "Pensão Alimentícia"
+            },
+            "5": {
+                "codigo": 201905,
+                "descricao": "União Estável"
+            }
+        }
+    },
+    "DIREITO_IMOBILIARIO": {
+        "codigo": 2020,
+        "descricao": "Direito Imobiliário",
+        "subassuntos": {
+            "1": {
+                "codigo": 202001,
+                "descricao": "Compra e Venda de Imóveis"
+            },
+            "2": {
+                "codigo": 202002,
+                "descricao": "Locação de Imóveis"
+            },
+            "3": {
+                "codigo": 202003,
+                "descricao": "Condomínio"
+            },
+            "4": {
+                "codigo": 202004,
+                "descricao": "Direitos de Propriedade"
+            }
+        }
+    }
+}
