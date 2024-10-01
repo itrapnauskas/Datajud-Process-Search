@@ -46,8 +46,6 @@ A autenticação da API Pública do Datajud é realizada através de uma Chave P
 
 No `app.py`, se necessário substitua a chave API em `API_KEY =`
 
-**Sim**, eu deixei a API KEY no código do projeto.
-
 ## Uso
 
 ### Rodar a Aplicação
