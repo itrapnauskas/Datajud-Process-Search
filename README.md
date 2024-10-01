@@ -93,4 +93,3 @@ Flask, Python, Datajud, Pesquisa de Processos, API, Aplicação Web, Jurídico, 
 ## Licença
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-```
