@@ -42,25 +42,11 @@ pip install -r requirements.txt
 
 A API Pública do Datajud é uma ferramenta que disponibiliza ao público o acesso aos metadados dos processos públicos dos tribunais do judiciário brasileiro. Os dados disponibilizados pela API são de origem da Base Nacional de Dados do Poder Judiciário – Datajud e atendem aos critérios estabelecidos pela Portaria Nº 160 de 09/09/2020.
 
-**API Key**
+A autenticação da API Pública do Datajud é realizada através de uma Chave Pública, gerada e disponibilizada pelo DPJ/CNJ. A chave vigente estará sempre acessível na **[Wiki](https://datajud-wiki.cnj.jus.br/api-publica/acesso)**, garantindo transparência e facilitando o acesso. Importante ressaltar que a chave poderá ser alterada pelo CNJ a qualquer momento.
 
-# Start of Selection
-A autenticação da API Pública do Datajud é realizada através de uma Chave Pública, gerada e disponibilizada pelo DPJ/CNJ. A chave vigente estará sempre acessível na **[Wiki](https://datajud-wiki.cnj.jus.br/api-publica/acesso)**, garantindo transparência e facilitando o acesso. Importante ressaltar que, por razões de segurança e gestão do sistema, a chave poderá ser alterada pelo CNJ a qualquer momento.
+No `app.py`, se necessário substitua a chave API em `API_KEY =`
 
-Para incorporar a API Key em suas requisições, utilize o formato `"Authorization: APIKey [Chave Pública]"` no cabeçalho da requisição.
-
-**APIKey atual:**
-
-```
-Authorization: APIKey cDZHYzlZa0JadVREZDJCendQbXY6SkJlTzNjLV9TRENyQk1RdnFKZGRQdw==
-```
-
-Abra o arquivo `app.py` e substitua `'your_secret_key_here'` e o valor de `API_KEY` por suas próprias chaves seguras.
-
-```python
-app.config['SECRET_KEY'] = 'sua_chave_secreta_aqui'
-API_KEY = "sua_api_key_aqui"
-```
+**Sim**, eu deixei a API KEY no código do projeto.
 
 ## Uso
 

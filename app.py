@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your_secret_key_here'  # Substitua por uma chave secreta segura
 
-# Chave de API fornecida
+# Chave de API fornecida - disponível em https://datajud-wiki.cnj.jus.br/api-publica/acesso
 API_KEY = "cDZHYzlZa0JadVREZDJCendQbXY6SkJlTzNjLV9TRENyQk1RdnFKZGRQdw=="
 
 # Cabeçalhos padrão para as requisições
